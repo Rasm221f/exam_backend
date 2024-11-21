@@ -1,0 +1,56 @@
+### POPULATE
+
+POST localhost:7070/api/items/populate
+
+### GET ALL ITEMS
+
+GET localhost:7070/api/items
+
+### GET ITEM BY ID
+
+GET localhost:7070/api/items/2
+
+### ADD NEW ITEM
+
+POST localhost:7070/api/items
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "headset",
+  "purchasePrice": "299.0",
+  "category": "SOUND",
+  "acquisitionDate": 1732185455000,
+  "description" : "headset"
+}
+
+### UPDATE EXISTING PLANT
+
+PUT localhost:7070/api/items/3
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "headset",
+  "purchasePrice": "299.0",
+  "category": "SOUND",
+  "acquisitionDate": 1732185455000,
+  "description" : "headset"
+}
+
+### DELETE EXISTING PLANT
+
+DELETE localhost:7070/api/items/3
+
+### ADD ITEM TO STUDENT
+
+PUT localhost:7070/api/items
+
+###
+
+POST localhost:7070/api/items/populate
+
+### GET BY CATEGORY
+
+GET localhost:7070/api/items/category/VIDEO
+
